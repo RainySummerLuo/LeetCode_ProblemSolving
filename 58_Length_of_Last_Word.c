@@ -5,10 +5,10 @@ Note: A word is defined as a character sequence consists of non-space characters
 */
 
 int lengthOfLastWord(char* s) {
-    int Asize = strlen(s) - 1;
+    int sSize = strlen(s) - 1;
     int count = 0;
     int word = 0;
-    for (int i = Asize; i >= 0; i--) { 
+    for (int i = sSize; i >= 0; i--) { 
         if (s[i] == ' ' && count == 0)
             continue;
         if (s[i] == ' ' && count != 0)
